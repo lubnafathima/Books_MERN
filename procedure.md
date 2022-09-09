@@ -157,7 +157,7 @@ const port = process.env.PORT || 8082;
 app.listen(port, () => console.log(`Server running on port ${port}`));  
 ```  
 - Now, you can run the project using the following command:  
-`npm run app`   
+`npm run dev`   
 ![Successfully Connected Server](https://blog.logrocket.com/wp-content/uploads/2019/07/successfully-connected-server.png)  
 
 # Building RESTful APIs with the MERN stack  
