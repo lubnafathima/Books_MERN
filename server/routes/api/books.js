@@ -4,7 +4,7 @@ import express from "express";
 const router = express.Router();
 
 // Load Book model
-const Book = require('../../models/Book');
+import Book from '../../models/Books.js'
 
 // @route GET api/books/test
 // @description tests books route
