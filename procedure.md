@@ -404,14 +404,14 @@ npm install --save axios
 }
 ```
 ## Creating the component file  
-- Inside the `src` folder `(client/src/)`, create another folder called `components`, and inside it, create five different files:  
--- CreateBook.js
--- ShowBookList.js
--- BookCard.js
--- ShowBookDetails.js
--- UpdateBookInfo.js  
-- We will work with these five files a bit later.  
-## Setup route  
+- Inside the `src` folder `(client/src/)`, create another folder called `components`, and inside it, create five different files:    
+-- CreateBook.js  
+-- ShowBookList.js     
+-- BookCard.js     
+-- ShowBookDetails.js  
+-- UpdateBookInfo.js    
+- We will work with these five files a bit later.    
+## Setup route    
 - Open the folder called `App.js` inside the `src` folder `(client/src/App.js)`, and replace it with the following code:  
 ```
 import React, { Component } from 'react';
