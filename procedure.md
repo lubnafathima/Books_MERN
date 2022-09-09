@@ -32,7 +32,7 @@ The phrase MERN stack refers to the following technologies:
 - You can see that `package.json` file would have been created  
 
 ## Installing dependencies
-- Let's install the following dependencies in server. Type the following command in `server terminal`  
+- Let's install the following dependencies in server. Type the following command in `server` terminal:   
 `npm i express mongoose body-parser bcryptjs validation config nodemon`  
 ![dependencies](https://blog.logrocket.com/wp-content/uploads/2019/07/adding-project-file-dependencies-e1562600284195.png)  
 **bcryptjs** is a password hashing function designed by Niels Provos and David Mazières
@@ -72,12 +72,12 @@ app.listen(port, () => console.log(`Server running on port ${port}`));
 ```  
 > Note you have to replace the code inside script as well, like given above  
 - So, now you can run your project using this command:  
-`$ npm run app`  
+`$ npm run dev`  
 - If you get any error at this point, then run the commands below:  
 ```
  npm install
 
- npm run app
+ npm run dev
 ```
 - You will see the following changes in your terminal if everything goes right:  
 ![Running Project Successfully](https://blog.logrocket.com/wp-content/uploads/2019/07/running-project-successful.png)  
