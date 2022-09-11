@@ -704,13 +704,13 @@ export default CreateBook;
 - The `ShowBookList.js` component will be responsible for showing all the books we already have stored in our database.  
 - Update `ShowBookList.js` with this code:   
 ```
-import React from 'react';
+import React, { Component } from 'react';
 import '../App.css';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 import BookCard from './BookCard';
 
-class ShowBookList extends React.Component {
+class ShowBookList extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -733,7 +733,9 @@ class ShowBookList extends React.Component {
 
 
   render() {
-    const books = this.state.books;
+    const {
+      books: books
+    } = this.state;
     console.log("PrintBook: " + books);
     let bookList;
 
@@ -809,12 +811,12 @@ export default BookCard;
 - The `ShowBookDetails` component has one task: it shows all the info we have about any book.  
 - We have both delete and edit buttons here to get access.  
 ```
-import React from 'react';
+import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import '../App.css';
 import axios from 'axios';
 
-class showBookDetails extends React.Component {
+class showBookDetails extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -851,7 +853,9 @@ class showBookDetails extends React.Component {
 
   render() {
 
-    const book = this.state.book;
+    const {
+      book : book
+    } = this.state;
     let BookItem = <div>
       <table className="table table-hover table-dark">
         {/* <thead>
@@ -950,12 +954,12 @@ export default showBookDetails;
 - An Edit Book button will trigger this component to perform.  
 - After clicking Edit Book, we will see a form with the old info, which we will be able to edit or replace.  
 ```
-import React from 'react';
+import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 import '../App.css';
 
-class UpdateBookInfo extends React.Component {
+class UpdateBookInfo extends Component {
   constructor(props) {
     super(props);
     this.state = {
